@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "theme";
+@import "assets/styles/mixins";
+@import "assets/styles/utili-classes";
+
+
+:root {
+  --basic-color: #FFB300;
+  --max-width: 1400px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Roboto, sans-serif;
+}
+
+html {
+  font-size: 10px;
+  @include xl {
+    font-size: 15px;
+  }
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+//@include xl {
+//  html {
+//    font-size: 15px;
+//  }
+//}

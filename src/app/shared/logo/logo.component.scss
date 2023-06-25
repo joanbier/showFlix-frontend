@@ -1,0 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/porter-sans-block');
+p, span {
+  color: #eeeeee;
+  font-family: "Porter Sans Block", sans-serif;
+  margin: 0;
+  line-height: inherit;
+  span {
+    color: var(--basic-color);
+  }
+}

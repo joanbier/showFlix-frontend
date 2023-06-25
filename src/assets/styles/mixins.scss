@@ -1,0 +1,40 @@
+@import "./breakpoints";
+
+@mixin max-content-width {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@mixin flex-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

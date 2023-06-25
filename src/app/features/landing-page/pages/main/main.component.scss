@@ -1,0 +1,30 @@
+@import "src/assets/styles/mixins";
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 10vw;
+  right: 10vw;
+  @include max-content-width;
+  text-align: center;
+  h1 {
+    font-family: "Copperplate", sans-serif;
+    font-size: 3rem;
+    color: var(--basic-color);
+    text-shadow: 0 0 20px black;
+  }
+  p {
+    margin: 3vh 0;
+    color: #ffffff;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-shadow: 0 0 10px black;
+    font-weight: 400;
+  }
+}
+
+@include xl {
+  .content {
+    text-align: left;
+  }
+}
